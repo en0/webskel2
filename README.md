@@ -1,5 +1,5 @@
-This is a basic template that contains the layout for most of my web based
-projects.  It uses Python flask and AngularJS.  I attempted to separate the API
+This is a basic template I like to keep on hand for starting new web based projects.  
+It uses Python flask and AngularJS.  I attempted to separate the API
 and UI code in the python in such a way that they are independent.
 Modifications have been made to angular to so that it plays nice with jinja2.
 
