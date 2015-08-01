@@ -1,0 +1,20 @@
+<div ng-init="set_active('home');">
+    <div class="well" ng-if="msg">
+        <h3>API Result <small>/api/v1/hello/:name</small></h3>
+        <p>Message: [[ msg.Message ]]</p>
+        <p>API Version: [[ msg.Version ]]</p>
+    </div>
+    <form class="form-inline" ng-submit="submit();">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" 
+                   class="form-control" 
+                   id="name" 
+                   placeholder="Please type your name"
+                   ng-model="name"
+            >
+        </div>
+        <button type="submit" class="btn btn-primary">Ok</button>
+    </form>
+    </br>
+</div>

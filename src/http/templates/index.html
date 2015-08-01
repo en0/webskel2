@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- AngularJS -->
+        <script type="text/javascript" src="/static/lib/angular/js/angular.min.js"></script>
+        <script type="text/javascript" src="/static/lib/angular/js/angular-route.min.js"></script>
+        <script type="text/javascript" src="/static/lib/angular/js/angular-resource.min.js"></script>
+        <script type="text/javascript" src="/static/lib/angular/js/angular-animate.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/static/lib/angular/css/angular-csp.css">
+
+        <!-- Bootstrap -->
+        <script type="text/javascript" src="/static/lib/bootstrap/js/ui-bootstrap-tpls-0.11.2.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/static/lib/bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="/static/lib/bootstrap/css/bootstrap.min.css">
+
+        <!-- Application Specific -->
+        <link rel="stylesheet" href="/static/css/site.css">
+        <script src="/static/js/app.js"></script>
+        <script src="/static/js/controllers.js"></script>
+        <script src="/static/js/api-service.js"></script>
+    </head>
+
+    <body ng-app="myapp" ng-controller='rootCtrl'>
+        <div class='container'>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">WebSkel2</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="nv-main-collapse">
+                        <ul class="nav navbar-nav">
+                            <li ng-class="{active: active_page=='home'}">
+                                <a href ng-click="go('/home');">Home</a>
+                            </li>
+                            <li ng-class="{active: active_page=='about'}">
+                                <a href ng-click="go('/about');">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div ng-view></div>
+        </div>
+    </body>
+
+</html>

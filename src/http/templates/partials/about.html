@@ -1,0 +1,32 @@
+<div ng-init="set_active('about');">
+    <h2>SKEL <small>Flask API/UI with AngularJS/Bootstrap</small></h2>
+    <p>This is a skeleton for Flask drivin AngularJS with Bootstrap application.</p>
+
+    <dl>
+        <dt>/templates/index.html</dt>
+        <dd>The site template for angularjs. Loads angular, bootstrap and site files</dd>
+        <dt>/templates/partials/*</dt>
+        <dd>All the partials for the angularjs views</dd>
+        <dt>/static/js/*</dt>
+        <dd>Site specific javascript files</dd>
+        <dt>/static/lib/*</dt>
+        <dd>All 3rd party libraries.</dd>
+        <dt>/static/css/site.css</dt>
+        <dd>Site wide CSS files (empty).</dd>
+    </dl>
+
+    <p>
+        Since AngularJS and jinja2 use the same varialbe interpolation, ie:
+        <pre>{{ "{{ VARIABLE }}" }}</pre>
+        The AngularJS interpolation has been modified to:
+        <pre>[[ StringConst ]]</pre>
+        If you wish to use a diffrent delimiter, you can modify this character in /static/js/app.js
+    </p>
+
+    <h3>External Links</h3>
+    <ul>
+        <li><a href="http://getbootstrap.com/css/">Bootstrap CSS</a></li>
+        <li><a href="http://angular-ui.github.io/bootstrap/">AngularJS Bootstrap Directives</a></li>
+        <li><a href="http://flask.pocoo.org/docs/0.10/">Flask Documentation</a></li>
+    </ul>
+</div>
