@@ -1,14 +1,16 @@
-FROM ubuntu:14.04
+FROM python:2.7
 MAINTAINER "Ian Laird"
+
 ENV DEBIAN_FRONTEND noninteractive
+RUN mkdir -p /srv/http
+WORKDIR /srv/http
 
-RUN \
-    apt-get update --fix-missing && \
-    apt-get install -y supervisor python python-flask gunicorn && \
-    rm -rf /var/lib/apt/lists/* && \
-    mkdir -p /srv/http
+# Requirements
+ADD ./requirements.txt /tmp/
+RUN pip install -r /tmp/requirements.txt
 
-ADD container-files /
+# Source Code
 ADD src/ /srv/http
 
-CMD supervisord -n
+# Service Run
+CMD gunicorn -b 0.0.0.0:5000 run:app
