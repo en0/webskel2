@@ -13,7 +13,9 @@ setting up a vertual environment and installing requirements.txt.
 Note: env/ is excluded in .gitignore.
 
 ## Editor environment
-Create a virtual environment to facilitate editor completers.
+Create a virtual environment to facilitate editor completers. This should be
+done in a diffrent terminal if you are using VIM.  Any setup required for your
+editor is not covered in this readme.
 
 ```bash
 # From project root:
@@ -48,4 +50,19 @@ machine's ip address.
 ```bash
 # To get docker-machine ip address:
 $ docker-machine ip
+```
+
+## Next Steps
+Now that your environment is setup, you can editor files and the changes will
+be visable in the web browser.
+
+One issue does exist:
+
+If you cause a syntax error the docker process will most likely crash. In that
+event you will need to restart the debugger after you have fixed the syntax
+error.
+
+```bash
+# To restart debugger (from project root):
+$ ./helper.sh debug
 ```
