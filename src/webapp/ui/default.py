@@ -1,10 +1,10 @@
-from flask import render_template
-from http import app, abort
+from . import mod
+from flask import abort, render_template
 from jinja2.exceptions import TemplateNotFound
 
 
-@app.route('/')
-@app.route('/<path:path>')
+@mod.route('/')
+@mod.route('/<path:path>')
 def default_route(path="index.html"):
     try:
         return render_template(path)

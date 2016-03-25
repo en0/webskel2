@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-DNAME="webskel2_devel"
+DNAME="webskel2"
 
 case $1 in
 debug)
@@ -31,7 +31,7 @@ run)
     ;;
 
 build)
-    docker build -t $DNAME .
+    docker build -t webskel2 .
     ;;
 
 *)

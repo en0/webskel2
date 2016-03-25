@@ -1,0 +1,9 @@
+src/config.ini
+[flask]
+DEBUG=True
+
+[log]
+LEVEL={{ py_LOG_LEVEL }}
+FORMAT={{ py_LOG_FORMAT }}
+DATEFMT={{ py_LOG_DATEFMT }}
+PATH=/var/logs/webapp.log

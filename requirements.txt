@@ -1,7 +1,8 @@
+configparser==3.3.0.post2
 Flask==0.10.1
+Flask-ini==0.2.1
 gunicorn==19.4.5
 itsdangerous==0.24
 Jinja2==2.8
 MarkupSafe==0.23
-virtualenv==15.0.1
 Werkzeug==0.11.5
