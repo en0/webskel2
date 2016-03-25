@@ -13,7 +13,7 @@ setting up a vertual environment and installing requirements.txt.
 Note: env/ is excluded in .gitignore.
 
 ## Editor environment
-Create a vertual environment for facilitate editor completers.
+Create a virtual environment to facilitate editor completers.
 
 ```bash
 # From project root:
@@ -38,4 +38,14 @@ directory.
 # From project root:
 $ ./helper.sh build
 $ ./helper.sh debug
+```
+
+## Testing Site
+Open your browser and navigate to [localhost](http://localhost/). If you are
+running under boot2docker, you will need to replace localhost with your docker
+machine's ip address.
+
+```bash
+# To get docker-machine ip address:
+$ docker-machine ip
 ```
