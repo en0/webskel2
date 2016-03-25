@@ -56,3 +56,10 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Editor
+.ropeproject
+*.swp
+
+# config-gen
+config.ini
