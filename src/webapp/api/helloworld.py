@@ -1,6 +1,6 @@
 from . import mod
 from flask import current_app
-from lib.resources.decorators import structured
+from libs.resources.decorators import structured
 
 
 @mod.route('/<string:ver>/hello/<string:name>')

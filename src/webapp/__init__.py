@@ -1,5 +1,5 @@
 from flask import Flask, redirect
-from lib import Config
+from libs import Config
 from webapp.ui import mod as ui_mod
 from webapp.api import mod as api_mod
 import logging
