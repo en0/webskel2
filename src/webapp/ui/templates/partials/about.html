@@ -1,18 +1,28 @@
 <div ng-init="set_active('about');">
     <h2>SKEL <small>Flask API/UI with AngularJS/Bootstrap</small></h2>
-    <p>This is a skeleton for Flask drivin AngularJS with Bootstrap application.</p>
+    <p>This is a skeleton for a Flask drivin AngularJS application with Bootstrap.</p>
 
     <dl>
-        <dt>/templates/index.html</dt>
-        <dd>The site template for angularjs. Loads angular, bootstrap and site files</dd>
-        <dt>/templates/partials/*</dt>
+        <dt>/src</dt>
+        <dd>All project source code.</dd>
+        <dt>/src/lib</dt>
+        <dd>Utilites, Models, Wrappers, Helpers, and Carmon Sandiago.</dd>
+        <dt>/src/webapp</dt>
+        <dd>The codes related to servicing web content.</dd>
+        <dt>/src/webapp/api</dt>
+        <dd>A Flask blueprint for all things related to the API.</dd>
+        <dt>/src/webapp/ui</dt>
+        <dd>A Flask Blueprint for all things related to the UI.</dd>
+        <dt>/src/webapp/ui/templates/</dt>
+        <dd>Main page index where all our client side code is loaded.</dd>
+        <dt>/src/webapp/ui/templates/partials/*</dt>
         <dd>All the partials for the angularjs views</dd>
-        <dt>/static/js/*</dt>
+        <dt>/src/webapp/ui/static/js/*</dt>
         <dd>Site specific javascript files</dd>
-        <dt>/static/lib/*</dt>
-        <dd>All 3rd party libraries.</dd>
-        <dt>/static/css/site.css</dt>
+        <dt>/src/webapp/ui/static/css/site.css</dt>
         <dd>Site wide CSS files (empty).</dd>
+        <dt>/src/webapp/static/vendor/*</dt>
+        <dd>All 3rd party client libs (bootstrap, angular).</dd>
     </dl>
 
     <p>
@@ -20,7 +30,7 @@
         <pre>{{ "{{ VARIABLE }}" }}</pre>
         The AngularJS interpolation has been modified to:
         <pre>[[ StringConst ]]</pre>
-        If you wish to use a diffrent delimiter, you can modify this character in /static/js/app.js
+        If you wish to use a diffrent delimiter, you can modify this character in /src/webapp/ui/static/js/app.js
     </p>
 
     <h3>External Links</h3>
