@@ -2,6 +2,9 @@
 <html lang="en">
     <head>
 
+        <!-- script type="text/javascript"
+            src="/static/vendor/jQuery/js/jquery-2.2.2.min.js"></script -->
+
         <!-- AngularJS -->
         <script type="text/javascript" src="/static/vendor/angular/js/angular.min.js"></script>
         <script type="text/javascript" src="/static/vendor/angular/js/angular-route.min.js"></script>
@@ -10,8 +13,9 @@
         <link rel="stylesheet" type="text/css" href="/static/vendor/angular/css/angular-csp.css">
 
         <!-- Bootstrap -->
-        <script type="text/javascript" src="/static/vendor/bootstrap/js/ui-bootstrap-tpls-0.11.2.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="/static/vendor/bootstrap/css/bootstrap-theme.min.css">
+        <script type="text/javascript" src="/static/vendor/bootstrap/js/ui-bootstrap-custom-1.2.5.min.js"></script>
+        <script type="text/javascript" src="/static/vendor/bootstrap/js/ui-bootstrap-custom-tpls-1.2.5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/static/vendor/bootstrap/css/ui-bootstrap-custom-1.2.5-csp.css">
         <link rel="stylesheet" type="text/css" href="/static/vendor/bootstrap/css/bootstrap.min.css">
 
         <!-- Application Specific -->
@@ -26,15 +30,12 @@
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="#">WebSkel2</a>
+                        <a class="navbar-brand" href="#">VFS.SrvCtrl</a>
                     </div>
                     <div class="collapse navbar-collapse" id="nv-main-collapse">
                         <ul class="nav navbar-nav">
                             <li ng-class="{active: active_page=='home'}">
                                 <a href ng-click="go('/home');">Home</a>
-                            </li>
-                            <li ng-class="{active: active_page=='about'}">
-                                <a href ng-click="go('/about');">About</a>
                             </li>
                         </ul>
                     </div>
